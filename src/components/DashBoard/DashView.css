@@ -1,0 +1,50 @@
+/* .dashContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #f4f5f8;
+    padding: 5px 10px;
+    padding-left: 40px;
+} */
+
+.dashCardContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width : 300px;
+}
+
+.dashContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #f4f5f8;
+    padding: 5px 10px;
+    padding-left: 40px;
+    min-height: calc(100vh - 62px);
+}
+@media only screen and (max-width:500px){
+    .dashContainer{
+        padding: 5px 10px;
+        padding-left: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .dashContainer {
+      flex-wrap: nowrap;
+    }
+  }
+
+.leftView{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 20px;
+}
