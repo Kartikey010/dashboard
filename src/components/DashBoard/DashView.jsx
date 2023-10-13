@@ -1,6 +1,5 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { DiCodeigniter } from "react-icons/di";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiAdjust,BiCircle} from "react-icons/bi"
 import {IoCaretBackCircle} from "react-icons/io5"
@@ -28,15 +27,15 @@ const DashView = () => {
     case "Urgent":
       return <BsExclamationSquareFill style={{color:"#fc7840"}}/>
     case "Medium":
-      return <img src={medbar} style={{width:"15px"}}/>
+      return <img src={medbar} style={{width:"15px"}} alt="img"/>
     case "High":
-      return <img src={Fullbar} style={{width:"15px"}}/>
+      return <img src={Fullbar} style={{width:"15px"}} alt="img"/>
     case "Low":
-      return <img src={lowbar} style={{width:"15px"}}/>
+      return <img src={lowbar} style={{width:"15px"}} alt="img"/>
     case "No priority":
       return <BsThreeDots/>
     default:
-      return <img src={Fullbar} style={{width:"10px"}}/>
+      return <img src={Fullbar} style={{width:"10px"}} alt="img"/>
    }
   }
   return (
@@ -83,7 +82,7 @@ const DashView = () => {
                 <div className="dashList flex-gap-10">
                   {/* {console.log(elem[index])} */}
                   {elem[index]?.value?.map((elem, ind) => {
-                     {console.log(elem)}
+                    
                     return (
                       
                       <Card id={elem.id} title={elem.title} tag={elem.tag} status={elem.status} priority={elem.priority} />

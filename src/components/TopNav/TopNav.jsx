@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { TiThList } from "react-icons/ti";
-import { BsChevronCompactDown, BsChevronCompactUp } from 'react-icons/bs';
-import { BiChevronDown } from 'react-icons/bi';
 import { CgChevronDown, CgChevronUp } from "react-icons/cg";
 
 import "./TopNav.css";

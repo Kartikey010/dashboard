@@ -27,13 +27,13 @@ import {GoDotFill} from "react-icons/go"
      case 0:
          return <BsThreeDots style={{color:"gray"}}/>;
      case 1:
-         return <img style={{width:"17px"}} src={lowbar} alt='lowbar'/>;
+         return <img style={{width:"11px"}} src={lowbar} alt='lowbar'/>;
      case 2:
-         return <img style={{width:"17px"}} src={medbar} alt='lowbar'/>
+         return <img style={{width:"11px"}} src={medbar} alt='lowbar'/>
      case 3:
-         return <img style={{width:"17px"}} src={Fullbar} alt='fullbar'/>
+         return <img style={{width:"11px"}} src={Fullbar} alt='fullbar'/>
      case 4:
-        return <BsExclamationSquareFill style={{color:"#fc7840"}}/>
+        return <BsExclamationSquareFill style={{color:"#fc7840",width:"11px"}}/>
      default:
          return "--";
          
@@ -54,7 +54,7 @@ const Card = ({id, title, tag, status,priority}) => {
         </div>
         <div className="cardTitle" style={{fontWeight : 600}} >
             {/* {console.log(status)} */}
-            <p className='flexit'><div style={{marginRight:"5px",marginLeft:"10px"}}>{swit(status)}</div><div style={{fontSize:"14px",marginLeft:"14px"}}>{title}</div></p>
+            <p className='flexit'><div style={{marginRight:"5px",marginLeft:"8px"}}>{swit(status)}</div><div style={{fontSize:"14px",marginLeft:"14px"}}>{title}</div></p>
         </div>
         <div className="cardTags">
         <div className="tags color-grey" > {swit2(priority)} </div>
